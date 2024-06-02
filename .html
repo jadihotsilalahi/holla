@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtex</title>
+</head>
+<body>
+    <p>Peringatan Ganti keamanan akun anda !</p>
+    <section>
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.get('/time', (req, res) => {
+  const currentTime = new Date().toLocaleString();
+  res.send(`Current server time is: ${currentTime}`);
+});
+
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} request for ${req.url}`);
+  next();
+});
+
+app.use((req, res) => {
+  res.status(404).send('404: Page Not Found');
+});
+
+// Menjalankan server
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ex veritatis ut rem perferendis molestias temporibus beatae, vero recusandae qui. Odio placeat, repudiandae eveniet nam incidunt deserunt molestiae dolor soluta.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolor minima consectetur in repudiandae inventore commodi accusantium ipsa ab vero delectus excepturi necessitatibus, neque tempora dolorum at assumenda, quos ex!
+Consequuntur tempora quasi eos nulla, hic alias in libero enim dolores tenetur aperiam totam quam aspernatur, modi est a distinctio cupiditate quisquam. Veniam, earum eos. Aut tenetur similique omnis! Nobis!
+
+app.use((req, res) => {
+    res.status(404).send('404: Page Not Found');
+  });*2
+  
+app.use((req, res) => {
+    res.status(404).send('404: Page Not Found');
+  });
+  
+  
+    </section>
+    <style>
+        p{
+            background-color: red;
+            width: auto;
+            height: 30px;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var nama=prompt("Nama anda = ")
+        alert(`terimakasih ${nama} data anda telah disimpan`)
+    </script>
+</body>
+</html>
